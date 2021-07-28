@@ -23,27 +23,58 @@ export class CustomersComponent implements OnInit {
 
   getCustomers(): Customer[] {
     return [
-      {
-        name: 'John',
-        age: 30
-      },
-      {
-        name: 'Maria',
-        age: 25
-      }
+     {
+          name: 'XXX-001',
+          description: 'XXX-001',
+          extension: {
+            customerId: 'XXX-001',
+            customerName: 'Test_Cust_Alpha_1',
+            adminName: 'TCA1',
+            country: 'UK',
+            region: 'EMEA',            
+          }
+        },
+        {
+          name: 'YYY-002',
+          description: 'YYY-002',
+          extension: {
+            customerId: 'YYY-002',
+            customerName: 'Test_Cust_Alpha_2',
+            adminName: 'TCA1',
+            country: 'Norway',
+            region: 'EMEA',            
+          }
+        },
     ];
   }
 
   initColumns(): void {
     this.customersTableColumns = [
       {
-        name: 'customers name',
-        dataKey: 'name'
+        name: 'Customer Name',
+        dataKey: 'customerName',
+        position: 'left',
+        isSortable: true
       },
       {
-        name: 'customers age',
-        dataKey: 'age'
-      }
+        name: 'Customer ID',
+        dataKey: 'customerId',
+        position: 'right',
+        isSortable: false
+      },
+      {
+        name: 'Country',
+        dataKey: 'country',
+        position: 'right',
+        isSortable: true
+      },
+      {
+        name: 'Region',
+        dataKey: 'region',
+        position: 'right',
+        isSortable: false
+      },
+     
     ];
   }
 
