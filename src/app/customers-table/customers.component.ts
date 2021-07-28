@@ -27,8 +27,8 @@ export class CustomersComponent implements OnInit {
           name: 'XXX-001',
           description: 'XXX-001',
           extension: {
-            customerId: 'XXX-001',
-            customerName: 'Test_Cust_Alpha_1',
+            cusIdt: 'XXX-001',
+            custName: 'Test_Cust_Alpha_1',
             adminName: 'TCA1',
             country: 'UK',
             region: 'EMEA',            
@@ -38,8 +38,8 @@ export class CustomersComponent implements OnInit {
           name: 'YYY-002',
           description: 'YYY-002',
           extension: {
-            customerId: 'YYY-002',
-            customerName: 'Test_Cust_Alpha_2',
+            cusIdt: 'YYY-002',
+            custName: 'Test_Cust_Alpha_2',
             adminName: 'TCA1',
             country: 'Norway',
             region: 'EMEA',            
@@ -52,13 +52,13 @@ export class CustomersComponent implements OnInit {
     this.customersTableColumns = [
       {
         name: 'Customer Name',
-        dataKey: 'customerName',
+        dataKey: 'custName',
         position: 'left',
         isSortable: true
       },
       {
         name: 'Customer ID',
-        dataKey: 'customerId',
+        dataKey: 'custId',
         position: 'right',
         isSortable: false
       },
